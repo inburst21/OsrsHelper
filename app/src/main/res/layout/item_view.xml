@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/text_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_item_buy_price"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="ee"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_one" />
+
+    <TextView
+        android:id="@+id/text_one"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Buy Price"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_item_name" />
+
+    <TextView
+        android:id="@+id/text_two"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:text="Sell Price"
+        app:layout_constraintStart_toEndOf="@+id/text_one"
+        app:layout_constraintTop_toBottomOf="@+id/text_item_name" />
+
+    <TextView
+        android:id="@+id/text_item_sell_price"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:text="$$"
+        app:layout_constraintStart_toEndOf="@+id/text_item_buy_price"
+        app:layout_constraintTop_toBottomOf="@+id/text_two" />
+
+    <TextView
+        android:id="@+id/text_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="71dp"
+        android:layout_marginTop="47dp"
+        android:text="Profit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/text_two"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_item_profit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="48dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/text_item_sell_price"
+        app:layout_constraintTop_toBottomOf="@+id/text_three" />
+</android.support.constraint.ConstraintLayout>
